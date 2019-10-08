@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<chnProjectConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ProgrameName="WatchDog" DebugMode="true" MaxNetworkwatchdog="1">
+  <SystemConfig>
+    <Enable>true</Enable>
+    <Timer>30</Timer>
+    <CpuOverCheckRate>90</CpuOverCheckRate>
+    <MemoryOverCheckRate>1000</MemoryOverCheckRate>
+    <SaveLogFile>true</SaveLogFile>
+  </SystemConfig>
+  <WatchdogConfig>
+    <Enable>true</Enable>
+    <ProcessName>Test</ProcessName>
+    <RunProgrameName>false</RunProgrameName>
+    <AfterRunProgrameTime>10</AfterRunProgrameTime>
+    <RunProgramePath>c:\</RunProgramePath>
+    <WatchdogRebootEnable>false</WatchdogRebootEnable>
+    <RebootAction>1</RebootAction>
+    <WatchDogTimeGap>60</WatchDogTimeGap>
+  </WatchdogConfig>
+  <NetworkWatchDogConfig>
+    <Enable>true</Enable>
+    <Port>5555</Port>
+    <RunProgrameName>false</RunProgrameName>
+    <AfterRunProgrameTime>10</AfterRunProgrameTime>
+    <RunProgramPath>c:\</RunProgramPath>
+    <WatchdogRebootEnable>false</WatchdogRebootEnable>
+    <RebootAction>1</RebootAction>
+    <WatchDogTimeGap>60</WatchDogTimeGap>
+  </NetworkWatchDogConfig>
+  <NetworkConfig>
+    <Enable>false</Enable>
+    <NetworkAddress>127.0.0.1</NetworkAddress>
+    <Port>12000</Port>
+  </NetworkConfig>
+  <LogServerConfig>
+    <Enable>true</Enable>
+    <NetworkAddress>127.0.0.1</NetworkAddress>
+    <Port>12100</Port>
+  </LogServerConfig>
+</chnProjectConfig>
